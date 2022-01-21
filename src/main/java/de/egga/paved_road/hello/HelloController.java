@@ -12,12 +12,3 @@ public class HelloController {
         return new Hello("yo", "egga");
     }
 }
-
-record Hello(
-
-        @JsonProperty("greeting")
-        String message,
-
-        @JsonProperty("addressee")
-        String addressee
-) { }
