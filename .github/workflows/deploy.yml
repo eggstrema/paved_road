@@ -10,7 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
-        - name: Login to Heroku Container registry
-          env:
-            HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-          run: heroku login
+      - uses: actions/checkout@v2
+      - name: Where are we?
+        run: pwd
+      - name: What is here?
+        run: ls- al
+      - name: Login to Heroku Container registry
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        run: heroku git:remote -a paved-road
