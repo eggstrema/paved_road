@@ -25,7 +25,7 @@ public class HelloControllerTest {
     public void it_should_return_hello_object() throws Exception {
         given().port(port)
                 .when().get("/hello")
-                .then().body(jsonEquals("{'greeting': 'na', 'addressee': 'egga'}"));
+                .then().body(jsonEquals("{'greeting': 'yo', 'addressee': 'egga'}"));
 
     }
 }
