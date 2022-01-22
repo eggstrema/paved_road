@@ -19,7 +19,7 @@ jobs:
         run: |
           git config user.name $(git log -1 --format='%aN')                                                                                           ─╯
           git config user.email $(git log -1 --format='%aE')
-          git config
+          git config -l
       - name: Push to Heroku repository
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
