@@ -7,6 +7,9 @@ plugins {
 group = 'de.egga'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
+jar {
+    enabled = false
+}
 
 repositories {
     mavenCentral()
