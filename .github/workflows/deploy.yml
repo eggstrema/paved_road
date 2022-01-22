@@ -15,6 +15,10 @@ jobs:
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         run: heroku git:remote -a paved-road
+      - name: Set git username and email
+        run: |
+          git config user.name $(git log -1 --format='%aN')                                                                                           ─╯
+          git config user.email $(git log -1 --format='%aE')
       - name: Push to Heroku repository
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
