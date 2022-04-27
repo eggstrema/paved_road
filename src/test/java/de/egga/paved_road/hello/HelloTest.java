@@ -1,6 +1,5 @@
 package de.egga.paved_road.hello;
 
-import de.egga.paved_road.hello.Hello;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
