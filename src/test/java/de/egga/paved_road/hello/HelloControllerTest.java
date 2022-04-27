@@ -1,4 +1,4 @@
-package de.egga.paved_road;
+package de.egga.paved_road.hello;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
