@@ -1,4 +1,4 @@
-package de.egga.paved_road.unit;
+package de.egga.paved_road;
 
 import de.egga.paved_road.hello.Hello;
 import org.junit.jupiter.api.Test;

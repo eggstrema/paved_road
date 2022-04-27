@@ -1,4 +1,4 @@
-package de.egga.paved_road.reestAssured;
+package de.egga.paved_road;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
